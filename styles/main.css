@@ -7807,6 +7807,10 @@ a.credit {
   cursor: pointer;
 }
 
+.text-color {
+  color: #7950f2;
+}
+
 /* Common Style */
 .section {
   padding-bottom: 0;
