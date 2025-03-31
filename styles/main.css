@@ -7731,9 +7731,19 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-reference img {
-  height: 120px;
-  width: auto;
+    height: 120px;
+    width: 120px;  /* Set width and height to the same value for a perfect circle */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for a nice effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
+
+.cc-reference img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
 
 .cc-reference .h5 {
   margin: 0;
